@@ -1,8 +1,10 @@
+import os
+
 from pymongo import MongoClient
 import math
 
 # Replace these variables with your MongoDB connection details
-mongo_uri = 'mongodb+srv://<user>:<password>@cluster0.example.mongodb.net/'  # Your MongoDB connection string
+mongo_uri = os.environ['MONGODB_URI']  # set in the environment, see api/.env.example
 database_name = 'test'         # Your database name
 collection_name = 'teachers'     # Your collection name
 

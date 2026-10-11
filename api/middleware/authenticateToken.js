@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const securityKey = "REMOVED_JWT_SECRET"; // Ensure you have this environment variable set
+const securityKey = process.env.JWT_SECRET; // Ensure you have this environment variable set
 
 /**
  * Middleware to authenticate a JWT token.
